@@ -1,0 +1,9 @@
+Counters/*
+__pycache__/*
+*/__pycache__/
+*/__pycache__/*
+venv/*
+
+Lol_AI_TWO.py
+LOL_AI.py
+Original_FECDataUploader.py
