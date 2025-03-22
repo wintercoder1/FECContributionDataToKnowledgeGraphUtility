@@ -14,7 +14,7 @@ class CandidateCommitteeLinkage:
         # Committee type.
         if committee_type_code in committee_type_code_map:
             committee_type_text = committee_type_code_map[committee_type_code]
-            self.committee_type = committee_type_text[0] + '    ' + committee_type_text[1]
+            self.committee_type = committee_type_text
         else:
             self.committee_type = committee_type_code
 

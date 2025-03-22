@@ -37,8 +37,8 @@ from typing import List
 #
 class IndividualContributionHandler(Handler):
 
-    FILENAME = 'itcont_2024_20000101_20230330.txt'
-    # FILENAME = '/itcont_2024_20230331_20230527.txt'
+    # FILENAME = 'itcont_2024_20000101_20230330.txt'
+    FILENAME = '/itcont_2024_20230331_20230527.txt'
     # FILENAME = '/itcont_2024_20230528_20230709.txt'
     # FILENAME = '/itcont_2024_20230710_20230811.txt'
     # FILENAME = '/itcont_2024_20230812_20230910.txt'
@@ -69,42 +69,10 @@ class IndividualContributionHandler(Handler):
     # FILENAME = '/itcont_2024_20241126_20241227.txt'
     # FILENAME = '/itcont_2024_20241227_20290521.txt'
 
-    DATA_DIRECTORY = '/Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions'
+    DATA_DIRECTORY = '/Users/steve/Documents/Dev/Compass-AI-LLM-RAG/FECDataOriginalTextFiles/manual/individual_contributions'
     TEST_DATA_DIRECTORY = DATA_DIRECTORY + '/2023-2024/indiv24/by_date'
 
     TEST_DATA_FILE_PATH = TEST_DATA_DIRECTORY + '/' + FILENAME
-    
-
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20230528_20230709.txt
-    #  itcont_2024_invalid_dates.txt  
-    # FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20230710_20230811.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20230812_20230910.txt  
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20230911_20231007.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20231008_20231103.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20231104_20231130.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20231201_20231228.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20231229_20240215.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240216_20240326.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240327_20240428.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240429_20240528.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240529_20240619.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240620_20240709.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240710_20240722.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240723_20240804.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240805_20240817.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240818_20240829.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240830_20240909.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240910_20240918.txt
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240919_20240928.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20240929_20241005.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241006_20241013.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241014_20241019.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241020_20241025.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241026_20241030.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241031_20241104.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241105_20241125.txt 
-    # /Users/steve/Documents/Dev/DEICheck.ai-LLM-RAG/FECData/manual/individual_contributions/2023-2024/indiv24/by_date/itcont_2024_20241126_20241227.txt 
-    # 2023-2024/indiv24/by_date/itcont_2024_20241227_20290521.txt 
     
     #
     #

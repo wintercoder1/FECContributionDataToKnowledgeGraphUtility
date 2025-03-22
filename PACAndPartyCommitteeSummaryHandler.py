@@ -27,15 +27,6 @@ class PACAndPartyCommitteeSummaryHandler(Handler):
         text_file = f.read()
         file_rows = text_file.splitlines()
         print(len(file_rows))
-
-        # Helper function to convert to Decimal or None
-        def to_decimal(value):
-            if value and value.strip():
-                try:
-                    return Decimal(value.replace(',', ''))
-                except:
-                    return None
-            return None
     
         committees_so_far = 0
         total_committees = len(file_rows)
