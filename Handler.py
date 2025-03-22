@@ -17,46 +17,6 @@ class  Handler:
             # f.write(self.proccessed_counter)
         self.neo4j_driver = self.initNeo4J()
 
-    # def processFileInFolder(self):
-    #     # process files within folder
-    #     object_to_upload_list = self.parseTextFileWithSeperator(self.TEST_DATA_FILE_PATH, '|') 
-
-    #     self.batchUploadToGraphDB(object_to_upload_list)
-
-    #     return
-     
-    # def batchUploadToGraphDB(self, object_to_upload_list: List[Any], batch_size: int = 1000): #, lambda_f: lambda int):
-    #     # Use Neo4J graph DB python driver.
-    #     print('  ' +str(self.neo4j_driver) )
-    #     total_linkages = len(object_to_upload_list)
-    #     processed = 0
-    #     with self.neo4j_driver.session() as session:
-    #         # Process contributions in batches
-    #         for i in range(0, total_linkages, batch_size):
-    #             batch = object_to_upload_list[i:i + batch_size]
-                
-    #             for linkage in batch:
-    #                 try:
-    
-    #                     # Create the Candidate Committee Linkage relationship
-    #                     # session.execute_write(self._create_candidate_committee_linkage, linkage)
-    #                     #
-    #                     #
-    #                     # replace with lambda.
-    #                     #
-    #                     #
-    #                     processed += 1
-    #                     if processed % 100 == 0:
-    #                         print(f"Processed {processed}/{total_linkages} linkages")
-    #                         # logging.info(f"Processed {processed}/{total_contributions} contributions")
-                                    
-    #                 except Exception as e:
-    #                     print(f"Error processing candidate committee linkage {linkage.linkage_id}: {str(e)}")
-        
-    #     if processed == total_linkages:
-    #         print(f"Completed uploading {processed}/{total_linkages} linkages")
-    #     return
-
     def initNeo4J(self):
         NEO4J_CONNECTION_STR = 'bolt://localhost:7687'
         NEO4J_URI = 'neo4j://localhost'
